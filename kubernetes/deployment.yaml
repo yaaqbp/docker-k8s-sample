@@ -18,3 +18,14 @@ spec:
         image: yaaqbp/myapp-app1
       - name: app2
         image: yaaqbp/myapp-app2
+        env:
+          - name: USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: secret-api-key
+                key: username
+          - name: PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: secret-api-key
+                key: password
