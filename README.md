@@ -1,5 +1,5 @@
 # docker-k8s-sample
-Current work:
+Current state:
 
 0. pull repo
 
