@@ -6,6 +6,7 @@ WORKDIR /app
 # Kopiowanie plików aplikacji
 COPY app2.py .
 COPY requirements.txt .
+COPY templates ./templates
 
 # Instalacja zależności
 RUN pip install --no-cache-dir -r requirements.txt
