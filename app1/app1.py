@@ -37,23 +37,3 @@ def get_data():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 
-
-"""
-
-    try:
-        
-        expected_username = os.environ.get("USERNAME")
-        expected_password = os.environ.get("PASSWORD")
-        #expected_username = 'api-username'
-        #expected_password = 'api-password'
-
-        #auth_header = request.headers.get('Authorization')
-        #username, password = auth_header.split(':')
-        if str(expected_username) == str(username) and \
-            str(expected_password) == str(password):
-            data = {'message': 'Hello from App1!'}
-        else:
-            data = {'message': f'Wrong credentials get from app2: {username} {password}, expected from secret: {expected_username} {expected_password}, '}
-    except Exception as e:
-        data = {'message': 'app1 error' + str(e)}
-"""

@@ -18,8 +18,7 @@ def display_data():
         api_url = 'http://myapp-service:5000/api/data'  # 'myapp-service' odwołuje się do app1 korzystając z k8s
         username = base64.b64encode(os.getenv("USERNAME").encode("ascii")).decode('ascii')
         password = base64.b64encode(os.getenv("PASSWORD").encode("ascii")).decode('ascii')
-        #username = 'api-username'
-        #password = 'api-password'
+
         """
         #docker vars:
         api_url= 'http://app1:5000/api/data'  # 'app1' to nazwa kontenera z app1 w Docker Compose
